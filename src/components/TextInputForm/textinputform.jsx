@@ -7,7 +7,7 @@ function TextInputForm({handleFormSubmit,handleInputChange,handleShowHideClick,i
         <form onSubmit={handleFormSubmit}>
             <div>
                 <TextInput
-                 type={inputType}
+                    type={inputType}
                     label="Enter a word or phrase"
                     placeholder="Enter Your Magic Words..."
                     onChangeHandler={handleInputChange}/>
