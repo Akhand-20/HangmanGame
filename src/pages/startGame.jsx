@@ -6,7 +6,7 @@ function StartGame(){
         <>
             <h1>Start Game</h1>
             <TextInputFormContainer/>
-            <Link to="/play" className="text-blue-300"> Play game </Link>
+            {/* <Link to="/play" className="text-blue-300"> Play game </Link> */}
         </>
         
     )

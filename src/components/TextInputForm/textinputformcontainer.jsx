@@ -5,7 +5,8 @@ function TextInputFormContainer(){
 
     const [inputType,setInputType]=useState("password");//this is used to toggle the show/hide button 
     const [value,setValue]=useState("");//this is used to catch the value whatever user types so that we can use it on the next page for guessing 
-    const navigate=useNavigate();//will redirect from one page to another
+    
+    const navigate=useNavigate();//will redirect from one page to another an hook -gives navitaor function  
 
 
 
@@ -13,7 +14,7 @@ function TextInputFormContainer(){
         event.preventDefault();//default behaviour na ho execute mtlb ki form ka default hai refresh honaaa vo na ho
         console.log("Form Submitted",value);//here value is being stored so that we can further use it  
         if(value){
-            navigate("/play")            
+            navigate(`/play`,{state:{wordSelected:value}})            
         }
     }
 
