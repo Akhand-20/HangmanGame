@@ -10,7 +10,7 @@ function LetterButtons({text,guessedLetters,onLetterClick,disabled}){
     //button styling 
     const buttonStyle=function(letter){
         if(guessedLettersSet.has(letter)){//guess kare hue letter bhi do tarah ke ho skate hai shi guess galat guess 
-            return `${originalLetters.has(letter) ? 'bg-gray-300':'bg-red-300'}`
+            return `${originalLetters.has(letter) ? 'bg-green-300':'bg-red-300'}`
         }else{
             return 'bg-blue-400';
         }
