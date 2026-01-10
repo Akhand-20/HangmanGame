@@ -2,7 +2,7 @@
 import Button from "../Button/button";
 import TextInput from "../TextInput/textinput";
 
-function TextInputForm({handleFormSubmit,handleInputChange,handleShowHideClick,inputType}){
+function TextInputForm({handleFormSubmit,handleInputChange,handleShowHideClick,inputType,hint,handleHint}){
     return(
         <form onSubmit={handleFormSubmit}>
             <div>
@@ -20,6 +20,13 @@ function TextInputForm({handleFormSubmit,handleInputChange,handleShowHideClick,i
                     onClickHandler={handleShowHideClick}/>
             </div>
 
+            <span className="inline-block w-154">
+                <TextInput
+                    type={hint}
+                    label="Enter Hint"
+                    placeholder="Enter your Hint"
+                    onChangeHandler={handleHint}/>
+            </span>
             <div>
                 <Button
                     type="submit"
