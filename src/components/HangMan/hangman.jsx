@@ -12,7 +12,7 @@ function HangMan({step}){
     const images=[Level1,Level2,Level3,Level4,Level5,Level6,Level7]
 
     return (
-         <div className='w-[600px] h-[600px] flex items-center justify-center mx-auto'>
+         <div className='w-[500px] h-[500px] flex items-center justify-center mx-auto'>
 
             <img 
                 src={step>=images.length ? images[images.length-1]: images[step]}  

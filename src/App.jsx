@@ -4,6 +4,7 @@ import './App.css'
 import TextInputFormContainer from './components/TextInputForm/textinputformcontainer'
 import StartGame from './pages/startGame'
 import PlayGame from './pages/playGame'
+import Home from './pages/home'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes> 
         <Route path='/start' element={<StartGame/>}/>
         <Route path='/play' element={<PlayGame/>}/>
-        <Route path='/' element={<div>Home</div>}/>
+        <Route path='/' element={<Home/>}/>
       </Routes>
 
       
