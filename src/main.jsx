@@ -11,3 +11,4 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   
 )
+//this Browser router help us to wrap react router functions to whole react
