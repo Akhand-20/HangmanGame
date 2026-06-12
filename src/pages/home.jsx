@@ -39,7 +39,7 @@ function Home() {
                 fontFamily: "'Press Start 2P', monospace", position: 'relative', overflow: 'hidden'
             }}>
 
-                <svg width="140" height="130" viewBox="0 0 140 130">
+                <svg width="300" height="300" viewBox="0 0 140 130">
                     <line x1="20" y1="125" x2="120" y2="125" stroke="#5F5E5A" strokeWidth="3" strokeLinecap="round" />
                     <line x1="40" y1="125" x2="40" y2="10" stroke="#5F5E5A" strokeWidth="3" strokeLinecap="round" />
                     <line x1="40" y1="10" x2="80" y2="10" stroke="#5F5E5A" strokeWidth="3" strokeLinecap="round" />
