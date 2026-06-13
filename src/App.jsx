@@ -15,7 +15,7 @@ function App() {
   const [hint ,setHint]=useState('')
    useEffect(() => {
     async function fetchData() {
-      const response = await fetch('http://localhost:3000/words');
+      const response = await fetch('https://hangman-json-server-6jku.onrender.com/words');
       const data = await response.json();
       setWordList(data);
       const randomIndex = Math.floor(Math.random() * data.length);
