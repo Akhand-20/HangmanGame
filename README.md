@@ -1,16 +1,39 @@
-# React + Vite
+# 🎮 Hangman Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro arcade-styled Hangman game with Single Player and Multiplayer modes.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://hangman-game-gamma-six.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React + Vite
+- React Router
+- Context API
+- Tailwind CSS
+- json-server (REST API)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- 🕹️ Single Player — random word from API
+- 👥 Multiplayer — one player sets the word, other guesses
+- 🎨 Retro arcade UI with glitch title effect
+- 💀 Hangman drawing that builds with wrong guesses
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+
+**1. Start the word server:**
+```bash
+cd WordServer
+npm start
+```
+
+**2. Start the frontend:**
+```bash
+cd HangmanGame
+npm run dev
+```
+
+## Deployment
+
+- Frontend → [Vercel](https://vercel.com)
+- Word API → [Render](https://render.com)
